@@ -4,16 +4,15 @@ const Header = () => {
   const x = 2;
   return (
     <div>
-      <h1 className="title">
+      <h1 className={style.title}>
         <span>WebDev</span> News
       </h1>
-      <style jsx>
-        {`
-          .title {
-            color: ${x > 3 ? "red" : "blue"};
-          }
-        `}
-      </style>
+      <p className={style.description}>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
+        voluptates, possimus vitae neque eveniet dolor quibusdam, assumenda,
+        suscipit est aliquid adipisci nam iste mollitia ipsa consectetur modi
+        eaque cumque enim.
+      </p>
     </div>
   );
 };
